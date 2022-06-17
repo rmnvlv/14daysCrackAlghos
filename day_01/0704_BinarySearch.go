@@ -39,7 +39,3 @@ func search02(nums []int, target int) int {
 	}
 	return -1
 }
-
-func main() {
-
-}
