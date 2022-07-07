@@ -2,6 +2,8 @@ package day03
 
 /* Easy */
 
+// [12 0 3 11 8]
+
 //Runtime: 35 ms, Memory Usage: 7 MB
 func moveZeroes(nums []int) {
 	index := 0
@@ -55,6 +57,7 @@ func moveZeroes4(nums []int) {
 	}
 }
 
+// Runtime: 21 ms, Memory Usage: 7.2 MB  TWO POINTERS
 func moveZeroes5(nums []int) {
 	len := len(nums)
 
