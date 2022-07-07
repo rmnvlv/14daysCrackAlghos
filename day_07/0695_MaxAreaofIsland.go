@@ -1,5 +1,6 @@
 package day07
 
+//Runtime: 7 ms, Memory Usage: 4.9 MB Recursive DFS
 func maxAreaOfIsland(grid [][]int) int {
 
 	lenCol := len(grid)
@@ -20,11 +21,11 @@ func maxAreaOfIsland(grid [][]int) int {
 			counter(row, col-1)
 		}
 
-		if row != lenCol+1 && grid[row+1][col] == 1 { // Down
+		if row != lenCol-1 && grid[row+1][col] == 1 { // Down
 			counter(row+1, col)
 		}
 
-		if col != lenRow+1 && grid[row][col+1] == 1 { // Right
+		if col != lenRow-1 && grid[row][col+1] == 1 { // Right
 			counter(row, col+1)
 		}
 	}
