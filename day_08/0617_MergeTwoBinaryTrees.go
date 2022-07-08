@@ -7,6 +7,7 @@ type TreeNode struct {
 	Right *TreeNode
 }
 
+// Runtime: 12 ms, Memory Usage: 6.8 MB
 func mergeTrees(root1 *TreeNode, root2 *TreeNode) *TreeNode {
 	if root1 == nil {
 		return root2
