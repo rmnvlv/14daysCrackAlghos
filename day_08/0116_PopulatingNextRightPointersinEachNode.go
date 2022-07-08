@@ -8,6 +8,7 @@ type Node struct {
 	Next  *Node
 }
 
+// Runtime: 7 ms, Memory Usage: 6.3 MB
 func connect(root *Node) *Node {
 
 	if root == nil {
@@ -29,9 +30,8 @@ func connect(root *Node) *Node {
 			field = field.Next
 		}
 
-		dummy = dummy.Next
+		dummy = dummy.Left
 	}
 
 	return root
-
 }
